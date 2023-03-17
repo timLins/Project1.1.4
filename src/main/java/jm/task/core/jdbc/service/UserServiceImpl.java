@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    UserDao userDao = new UserDaoJDBCImpl();
+     private final UserDao userDao = new UserDaoJDBCImpl();
 
 
     public void createUsersTable() {
